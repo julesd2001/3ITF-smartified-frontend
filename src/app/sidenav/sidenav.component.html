@@ -1,0 +1,63 @@
+<mat-sidenav-container class="example-container" autosize>
+	<mat-sidenav #sidenav id="left" class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+        <div class="sidenavWrapper">
+            <mat-nav-list>
+			<mat-list-item class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Mijn presentaties</span>
+				<mat-icon mat-list-icon>laptop</mat-icon>
+			</mat-list-item>
+            <mat-list-item class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Bedrijven</span>
+				<mat-icon mat-list-icon>domain</mat-icon>
+			</mat-list-item>
+            <mat-list-item class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Gebruikers</span>
+				<mat-icon mat-list-icon>person</mat-icon>
+			</mat-list-item>
+            <mat-list-item class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Datasets</span>
+				<mat-icon mat-list-icon>storage</mat-icon>
+			</mat-list-item>
+            <mat-list-item class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Kleuren</span>
+				<mat-icon mat-list-icon>palette</mat-icon>
+			</mat-list-item>
+			
+		</mat-nav-list>
+
+        <div class="dropdown user-info">
+            <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" role="button"
+             id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <div>
+                    <strong class="ml-2 text-white p-0 text-small">Nico Vermeir</strong>
+                    <br>
+                    <small class="ml-2 text-muted">nico.vermeir@inetum.com</small>
+                </div>
+                
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownUser">
+                <a class="dropdown-item">Action</a>
+            </div>
+        </div>
+
+        </div>
+		
+        
+	</mat-sidenav>
+<!--Hoe gaan we content hier laten inladen? Lijkt me niet de beste manier om dat direct hier al in te doen maar ik zou eerlijk gezegd niet weten hoe het anders op een werkende manier gedaan kan worden...-->
+	<div class="example-sidenav-content">
+        <div class="container mt-2">
+            <h1 class="font-weight-bold">Test</h1>
+            <p>This is where main content will go</p>
+        </div>
+	</div>
+
+    <mat-sidenav #sidenav class="example-sidenav" mode="side" position="end" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+		<h1 class="font-weight-bold">Test</h1>
+        <p>Right sidenav content</p>
+    <mat-nav-list>
+</mat-nav-list>
+	</mat-sidenav>
+
+</mat-sidenav-container>
