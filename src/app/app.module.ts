@@ -12,10 +12,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { PresentationComponent } from './presentations/presentation/presentation.component';
 import { MatCardModule } from '@angular/material/card';
 import { CompanyComponent } from './companies/company/company.component';
-import { UserlistComponent } from './users/userList/userlist/userlist.component';
-import { UserformComponent } from './users/userForm/userform/userform.component';
 import { DatasetListComponent } from './datasets/dataset-list/dataset-list.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { UsersModule } from './users/users.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +22,6 @@ import { DatasetListComponent } from './datasets/dataset-list/dataset-list.compo
     SidenavComponent,
     PresentationComponent,
     CompanyComponent,
-    UserlistComponent,
-    UserformComponent,
     DatasetListComponent,
     
   ],
@@ -35,7 +32,9 @@ import { DatasetListComponent } from './datasets/dataset-list/dataset-list.compo
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

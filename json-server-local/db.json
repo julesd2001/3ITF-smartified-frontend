@@ -1,0 +1,51 @@
+{
+    "company": [
+        {
+            "id": 1,
+            "name": "Inetum Realdolmen",
+            "logo": "",
+            "primaryColor": "lightblue",
+            "secondaryColor": "white"
+        }
+    ],
+    "dashboard": [
+        {
+            "id": 1,
+            "name": "Dashboard 1",
+            "description": "Test beschrijving voor een dashboard"
+        }
+    ],
+    "graph": [
+    {
+        "id": 1,
+        "title": "Grafiek titel",
+        "subtitle": "Grafiek ondertitel",
+        "apiCall": "",
+        "propX": "",
+        "propY": ""
+    }
+    ],
+    "colorSet": [
+    {
+        "id": 1,
+        "color1": "#004D77",
+        "color2": "#242D4E",
+        "color3": "#00000029",
+        "color4": "#001C54",
+        "color5": "#00B5AD",
+        "color6": "#FF5540",
+        "color7": "#F7F5F7"
+    }
+    ],
+    "user": [
+        {
+            "id": 1,
+            "firstname": "Nico",
+            "lastname": "Vermeir",
+            "email": "nico.vermeir@inetum.be",
+            "password": "loldontlookatthis123",
+            "token": "",
+            "profilePicture": ""
+        }
+    ]
+}
