@@ -1,0 +1,82 @@
+<h1><b>Grafiek Bewerken</b></h1>
+<form action="/blabla" class="form">
+    <label for="titel" class="hoofding">Titel!:</label> <br>
+    <input type="text" id="titel" name="titel" style="border-color: #7CA1B7;"><br><br>
+
+    <!--Dropdown menu -->
+    <label for="grafiek" class="hoofding">Type grafiek:</label>
+    <br>
+    <select name="grafiek" id="grafiek" class="dropdown" style="border-color: #7CA1B7;">
+        <option value="Staafdiagram">Staafdiagram</option>
+        <option value="Lijngrafiek">Lijngrafiek</option>
+        <option value="Scatterplot">Scatterplot</option>
+    </select>
+    <br>
+
+    <!--Dropdown menu einde-->
+    <label for="apicall" class="hoofding">Api Call:</label><br>
+    <input type="text" id="apicall" name="apicall" style="border-color: #7CA1B7;"><br><br>
+    <!--Table-->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Type voertuig</th>
+            <th>Aantal</th>
+            <th>Datum</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Fietser</td>
+            <td>103</td>
+            <td>12/12/2021</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Auto</td>
+            <td>254</td>
+            <td>12/12/2021</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Vrachtwagen</td>
+            <td>85</td>
+            <td>12/12/2021</td>
+          </tr>
+      </table>
+
+    <!--Dropdown menu X-as-->
+    <label for="xas" class="hoofding">Eigenschappen X-as:</label>
+    <select name="xas" id="xas" class="dropdown" style="border-color: #7CA1B7;">
+        <option value="datum">Datum</option>
+        <option value="aantal">Aantal</option>
+        <option value="test">Test</option>
+    </select>
+    <br>
+    <!--Dropdown menu einde-->
+
+    <!--Dropdown menu Y-as -->
+    <label for="yas" class="hoofding">Eigenschappen Y-as:</label>
+    <br>
+    <select name="yas" id="yas" class="dropdown" style="border-color: #7CA1B7;">
+        <option value="aantal">Aantal</option>
+        <option value="datum">Datum</option>
+        <option value="test">Test</option>
+    </select>
+    <br>
+    <!--Dropdown menu einde-->
+
+    <!--Dropdown menu kleur -->
+    <label for="kleurenset" class="hoofding">Kleurenset:</label>
+    <br>
+    <select name="kleurenset" id="kleurenset" class="dropdown" style="border-color: #7CA1B7;"> 
+        <option value="kleurenset1">Kleurenset 1</option>
+        <option value="kleurenset2">Kleurenset 2</option>
+        <option value="kleurenset3">Kleurenset 3</option>
+    </select>
+    <br>
+    <!--Dropdown menu einde-->
+    
+    <br>
+    <input type="submit" value="Submit" class="submit">
+    <input type="submit" value="Verwijderen" class="submit">
+  </form>
