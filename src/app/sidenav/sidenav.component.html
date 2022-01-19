@@ -2,19 +2,19 @@
 	<mat-sidenav #sidenav id="left" class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
         <div class="sidenavWrapper">
             <mat-nav-list>
-			<mat-list-item class="parent">
+			<mat-list-item class="parent" routerLink="/presentation">
 				<span class="full-width" *ngIf="isExpanded || isShowing">Mijn presentaties</span>
 				<mat-icon mat-list-icon>laptop</mat-icon>
 			</mat-list-item>
-            <mat-list-item class="parent">
+            <mat-list-item class="parent" routerLink="/companies">
 				<span class="full-width" *ngIf="isExpanded || isShowing">Bedrijven</span>
 				<mat-icon mat-list-icon>domain</mat-icon>
 			</mat-list-item>
-            <mat-list-item class="parent">
+            <mat-list-item class="parent" routerLink="/users">
 				<span class="full-width" *ngIf="isExpanded || isShowing">Gebruikers</span>
 				<mat-icon mat-list-icon>person</mat-icon>
 			</mat-list-item>
-            <mat-list-item class="parent">
+            <mat-list-item class="parent" routerLink="/datasets">
 				<span class="full-width" *ngIf="isExpanded || isShowing">Datasets</span>
 				<mat-icon mat-list-icon>storage</mat-icon>
 			</mat-list-item>
@@ -48,8 +48,7 @@
 <!--Hoe gaan we content hier laten inladen? Lijkt me niet de beste manier om dat direct hier al in te doen maar ik zou eerlijk gezegd niet weten hoe het anders op een werkende manier gedaan kan worden...-->
 	<div class="example-sidenav-content">
         <div class="container mt-2">
-            <h1 class="font-weight-bold">Test</h1>
-            <p>This is where main content will go</p>
+            <router-outlet></router-outlet>
         </div>
 	</div>
 

@@ -1,0 +1,10 @@
+@import "../../../scss/variables";
+
+.card {
+    background-color: $grey;
+}
+
+mat-card {
+    font-family: $font-family-text;
+    background-color: $grey;
+}
