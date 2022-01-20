@@ -1,8 +1,12 @@
 <h1 class="font-weight-bold">Bedrijven</h1>
-<mat-card class="example-card" *ngFor="let company of companies">
+<a (click)="add()" class="btn btn-primary mb-3">Nieuw bedrijf</a>
+<mat-card class="example-card mb-3" *ngFor="let company of companies">
     <mat-card-title-group>
-        <img mat-card-lg-image src="https://www.project-sherpa.eu/wp-content/uploads/2020/04/smart-cities-begin-to-embrace-digital-rights-for-personal-privacy-and-data-protection_1500.jpg" >
+        <img mat-card-lg-image src="{{company.logo}}" >
       <mat-card-title class="font-weight-bold"> {{ company.name }} </mat-card-title>
-      <mat-card-subtitle class="text-muted font-weight-bold">This needs to be clickable!</mat-card-subtitle>
     </mat-card-title-group>
+    <mat-card-actions align="end">
+      <button class="btn btn-primary mr-2" (click)="edit(company.id)"><i class="fas fa-edit"></i> Bewerken</button>
+      <button class="btn btn-danger" (click)="delete(company.id)"><i class="fas fa-trash-alt"></i> Verwijderen</button>
+    </mat-card-actions>
   </mat-card>

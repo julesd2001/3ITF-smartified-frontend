@@ -52,11 +52,14 @@
         </div>
 	</div>
 
-    <mat-sidenav #sidenav class="example-sidenav" mode="side" position="end" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
-		<h1 class="font-weight-bold">Test</h1>
-        <p>Right sidenav content</p>
-    <mat-nav-list>
-</mat-nav-list>
+    <mat-sidenav #sidenav class="example-sidenav" mode="side" position="end" opened="true" [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
+    [fixedBottomGap]="options.value.bottom" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+        <div class="sidenavWrapper">
+            <h1>Test</h1>
+            <p>Right sidenav content</p>
+            <!--moeten we nog zien te fixen dat deze niet de hele pagina width inneemt voor een of andere reden? al een aantal dingen geprobeerd maar geen idee waarom deze nog steeds alle width blijft oppakken-->
+            <!-- <app-graph-form></app-graph-form> -->
+        </div>
 	</mat-sidenav>
 
 </mat-sidenav-container>

@@ -1,0 +1,22 @@
+<h1 class="font-weight-bold">Nieuw bedrijf</h1>
+<form (ngSubmit)="onSubmit()" #companyForm="ngForm">
+    <div class="form-group">
+      <label for="name">Naam bedrijf</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="company.name" placeholder="Naam bedrijf" #name="ngModel" required>
+    </div>
+    <div class="form-group">
+      <label for="logo">Logo</label>
+      <input type="text" class="form-control" id="logo" name="logo" [(ngModel)]="company.logo" #logo="ngModel" placeholder="Link naar logo bedrijf" required>
+    </div>
+    <!--voorlopig gewoon textvakken maar lijkt me tof om hier iets anders mee te doen-->
+    <div class="form-group">
+        <label for="primaryColor">Primaire kleur</label>
+        <input type="text" class="form-control" id="primaryColor" name="primaryColor" [(ngModel)]="company.primaryColor" #primaryColor="ngModel" placeholder="Naam kleur">
+      </div>
+      <div class="form-group">
+        <label for="secondaryColor">Secundaire kleur</label>
+        <input type="text" class="form-control" id="secondaryColor" name="secondaryColor" [(ngModel)]="company.secondaryColor" #secondaryColor="ngModel" placeholder="Naam kleur">
+      </div>
+    <button type="submit" class="btn btn-primary" 
+    ngIf="isAdd"><i class="fas fa-save"></i> Bedrijf aanmaken</button>
+  </form>
