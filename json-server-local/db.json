@@ -1,51 +1,62 @@
 {
-    "company": [
-        {
-            "id": 1,
-            "name": "Inetum Realdolmen",
-            "logo": "",
-            "primaryColor": "lightblue",
-            "secondaryColor": "white"
-        }
-    ],
-    "dashboard": [
-        {
-            "id": 1,
-            "name": "Dashboard 1",
-            "description": "Test beschrijving voor een dashboard"
-        }
-    ],
-    "graph": [
+  "company": [
     {
-        "id": 1,
-        "title": "Grafiek titel",
-        "subtitle": "Grafiek ondertitel",
-        "apiCall": "",
-        "propX": "",
-        "propY": ""
+      "id": 1,
+      "name": "Inetum Realdolmen",
+      "logo": "",
+      "primaryColor": "lightblue",
+      "secondaryColor": "white"
     }
-    ],
-    "colorSet": [
+  ],
+  "dashboard": [
     {
-        "id": 1,
-        "color1": "#004D77",
-        "color2": "#242D4E",
-        "color3": "#00000029",
-        "color4": "#001C54",
-        "color5": "#00B5AD",
-        "color6": "#FF5540",
-        "color7": "#F7F5F7"
+      "id": 1,
+      "name": "Dashboard 1",
+      "description": "Test beschrijving voor een dashboard"
     }
-    ],
-    "user": [
-        {
-            "id": 1,
-            "firstname": "Nico",
-            "lastname": "Vermeir",
-            "email": "nico.vermeir@inetum.be",
-            "password": "loldontlookatthis123",
-            "token": "",
-            "profilePicture": ""
-        }
-    ]
+  ],
+  "graph": [
+    {
+      "id": 1,
+      "title": "Grafiek titel",
+      "subtitle": "Grafiek ondertitel",
+      "apiCall": "",
+      "propX": "",
+      "propY": ""
+    }
+  ],
+  "colorSet": [
+    {
+      "id": 1,
+      "color1": "#004D77",
+      "color2": "#242D4E",
+      "color3": "#00000029",
+      "color4": "#001C54",
+      "color5": "#00B5AD",
+      "color6": "#FF5540",
+      "color7": "#F7F5F7"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "firstname": "Nico",
+      "lastname": "Vermeir",
+      "email": "nico.vermeir@inetum.be",
+      "password": "loldontlookatthis123",
+      "token": "",
+      "profilePicture": ""
+    }
+  ],
+  "presentation": [
+    {
+      "id": 1,
+      "title": "Smart Cities in 2022: Challenges of Tomorrow",
+      "bannerImage": "https://www.project-sherpa.eu/wp-content/uploads/2020/04/smart-cities-begin-to-embrace-digital-rights-for-personal-privacy-and-data-protection_1500.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magni quos mollitia quia blanditiis obcaecati quam, id aspernatur minima asperiores distinctio molestiae nemo tempore nobis, fugit dolores ab, magnam provident odio iure vitae inventore. Qui est iusto optio ipsam doloremque?",
+      "length": "45 min",
+      "date": "21/12/2021",
+      "isFavorite": true
+    }
+  ]
 }

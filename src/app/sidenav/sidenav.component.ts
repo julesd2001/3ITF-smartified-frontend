@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
@@ -24,7 +25,16 @@ export class SidenavComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  options: FormGroup;
+
+  constructor(fb: FormBuilder) {
+    this.options = fb.group({
+      bottom: 0,
+      fixed: false,
+      top: 0,
+    });
+  }
+
 
   ngOnInit(): void {
   }

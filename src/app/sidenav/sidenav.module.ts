@@ -6,16 +6,22 @@ import {MatList, MatListModule} from '@angular/material/list';
 import {MatIcon, MatIconModule} from '@angular/material/icon';
 import { AppRoutingModule } from '../app-routing.module';
 import {MatCardModule} from '@angular/material/card';
+import { GraphFormComponent } from '../graph-form/graph-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    GraphFormComponent
+  ],
   imports: [
     CommonModule,
     MatSidenavModule,
     MatListModule,
     MatIconModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class SidenavModule { }

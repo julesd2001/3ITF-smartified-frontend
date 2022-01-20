@@ -1,12 +1,12 @@
 <h1 class="font-weight-bold">Mijn presentaties</h1>
-<mat-card class="example-card">
+<mat-card class="example-card" *ngFor="let presentation of presentations">
     <mat-card-title-group>
-        <img mat-card-lg-image src="https://www.project-sherpa.eu/wp-content/uploads/2020/04/smart-cities-begin-to-embrace-digital-rights-for-personal-privacy-and-data-protection_1500.jpg" >
-      <mat-card-title class="font-weight-bold">Smart Cities in 2022: Challenges of Tomorrow</mat-card-title>
-      <mat-card-subtitle class="text-muted font-weight-bold">Nico Vermeir | 2 november 2021</mat-card-subtitle>
+        <img mat-card-lg-image src="{{presentation.bannerImage}}" >
+      <mat-card-title class="font-weight-bold"> {{ presentation.title }} </mat-card-title>
+      <mat-card-subtitle class="text-muted font-weight-bold">Nico Vermeir | {{presentation.date}} </mat-card-subtitle>
       
     </mat-card-title-group>
     <mat-card-content>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magni quos mollitia quia blanditiis obcaecati quam, id aspernatur minima asperiores distinctio molestiae nemo tempore nobis, fugit dolores ab, magnam provident odio iure vitae inventore. Qui est iusto optio ipsam doloremque?
+        {{ presentation.description }}
       </mat-card-content>
   </mat-card>
